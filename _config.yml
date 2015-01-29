@@ -3,7 +3,7 @@ description: "My Personal Portfolio"
 
 url: "http://localhost:4000"
 
-paginate: 10
+paginate: 9
 
 markdown: rdiscount 
 permalink: pretty

@@ -1,0 +1,60 @@
+body {
+  font-family: 'Lora', Garamond, serif; }
+
+.home {
+  /* Location of the image */
+  background-image: url(/assets/images/mexico.jpg);
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  /* Background image is fixed in the viewport so that it doesn't move when 
+  the content's height is greater than the image's height */
+  background-attachment: fixed;
+  /* This is what makes the background image rescale based
+  on the container's size */
+  background-size: cover;
+  /* Set a background color that will be displayed
+  while the background image is loading */
+  background-color: #464646; }
+
+.center {
+  margin: 0 auto; }
+
+.contents {
+  font-size: 50px; }
+
+.contents a {
+  color: white; }
+
+.contents p {
+  font-size: 50px;
+  color: white; }
+
+a:hover {
+  color: white;
+  text-decoration: none; }
+
+.home-title {
+  color: white; }
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
+
+h1 {
+  font-size: 100px; }
