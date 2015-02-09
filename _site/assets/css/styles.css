@@ -1,63 +1,100 @@
 body {
-  font-family: 'Lora', Garamond, serif; }
+  font-family: 'Lato', sans-serif;
+  color: white;
+  background-color: black; }
 
 .home {
-  /* Location of the image */
-  background-image: url(/assets/images/mexico.jpg);
-  /* Background image is centered vertically and horizontally at all times */
-  background-position: center center;
-  /* Background image doesn't tile */
-  background-repeat: no-repeat;
-  /* Background image is fixed in the viewport so that it doesn't move when 
-  the content's height is greater than the image's height */
-  background-attachment: fixed;
-  /* This is what makes the background image rescale based
-  on the container's size */
+  background: url(http://media1.giphy.com/media/OA4D9UR5LAaic/giphy.gif) no-repeat center center fixed;
   background-size: cover;
-  /* Set a background color that will be displayed
-  while the background image is loading */
-  background-color: #464646; }
+  margin: 0 auto;
+  width: 90%; }
 
-.center {
-  margin: 0 auto; }
-
-.contents {
-  font-size: 50px; }
-
-.contents a {
-  color: white; }
-
-.contents p {
-  font-size: 50px;
-  color: white; }
-
-a:hover {
+.home-title a {
   color: white;
-  text-decoration: none; }
-
-.home-title {
-  color: white; }
-
-.hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform; }
-
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1); }
-
-h1 {
+  text-decoration: none;
+  font-weight: 300;
   font-size: 100px; }
 
-.mobi {
-  font-size: 50%; }
+.mobi .home-title a {
+  font-size: 100%; }
+
+.contents {
+  color: white;
+  margin-top: -30px;
+  padding-left: 4px;
+  font-size: 60px;
+  font-weight: 100; }
+  .contents a {
+    color: white;
+    font-size: 40px; }
+
+.mobnav {
+  display: none; }
+
+.mobi .mobnav {
+  display: block;
+  margin-left: 2px;
+  margin-top: -15px; }
+  .mobi .mobnav a {
+    display: block;
+    color: white;
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 10px; }
+
+.container {
+  margin: 0 auto;
+  width: 90%; }
+
+.post {
+  width: 33%;
+  height: 33%;
+  display: inline-block;
+  overflow: hidden;
+  position: relative; }
+  .post img {
+    max-width: 100%; }
+
+.mobi nav {
+  width: 100%;
+  display: none; }
+
+nav a {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  color: white;
+  font-weight: 100; }
+
+nav a:hover,
+nav a:focus {
+  outline: none; }
+
+/* Effect 5: same word slide in */
+.cl-effect-5 a {
+  overflow: hidden;
+  padding: 0 4px;
+  height: 1em; }
+
+.cl-effect-5 a span {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.8s;
+  -moz-transition: -moz-transform 0.8s;
+  transition: transform 0.8s; }
+
+.cl-effect-5 a span::before {
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+  font-weight: 300;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.cl-effect-5 a:hover span,
+.cl-effect-5 a:focus span {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%); }

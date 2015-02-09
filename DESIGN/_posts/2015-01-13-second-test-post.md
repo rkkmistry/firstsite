@@ -1,13 +1,18 @@
 ---
-title: My Second Posts
 layout: post
+title: My Second Post
 category: design
+
+images:
+
+  - url: http://placekitten.com/g/600/600
+    alt: Cypripedium Calceolum
+    title: Cypripedium Calceolum
+
 ---
 
-![An Image](http://placehold.it/300x300 "A Placeholder")
+Intro here yo ! <-- THIS IS THE EXCERPT
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elementum leo non felis porttitor vulputate. Nulla ipsum quam, auctor ut hendrerit quis, tincidunt eu metus. Quisque ipsum tellus, semper a tempus quis, interdum vel magna. Cras a nisl diam, in accumsan augue. Pellentesque varius nibh eu diam tempor rhoncus.
-
-## Pellentesque sollicitudin
-
-Erat pellentesque ornare gravida, ipsum est luctus neque, eget condimentum urna arcu sit amet felis. Duis nisl augue, scelerisque quis iaculis non, commodo a tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tincidunt porttitor nibh at semper. 
+Post body begin, and first image not in excerpt
+{% assign image = page.images[0] %} <-- first element of the array is zero
+{% include image.html image=image %}

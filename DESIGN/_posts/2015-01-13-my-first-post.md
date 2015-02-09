@@ -1,13 +1,19 @@
 ---
-title: My First Post
 layout: post
+title: My First Post
 category: design
+
+images:
+
+  - url: http://placekitten.com/g/600/600
+    alt: Cypripedium Calceolum
+    title: Cypripedium Calceolum
+
 ---
 
-![An Image](http://placehold.it/300x300 "A Placeholder")
+This is the excerpt
 
-Sed id lacus eu urna ullamcorper mattis. Etiam ut nunc erat. Sed et velit ac nisi mattis mollis tempus id nulla. In varius fermentum posuere. Vivamus suscipit accumsan arcu ac ullamcorper. Aliquam adipiscing, ante non eleifend blandit, nunc diam vulputate augue, eu convallis lorem lacus in lacus. Curabitur ultricies ultrices diam, vel tincidunt dui rhoncus a. Vivamus at sapien in turpis consequat pharetra sit amet quis elit.
+Post body begin, and first image not in excerpt
 
-## Nam vel justo ut nisl rutrum lobortis
-
-Donec at arcu nisi, quis euismod enim. Donec viverra felis vitae elit ornare porta. Vivamus ullamcorper consectetur odio, vitae imperdiet mi laoreet vitae. Fusce ante ligula, cursus eget volutpat vel, pretium eget tellus.
+{% assign image = page.images[0] %} 
+{% include image.html image=image %}

@@ -4,43 +4,39 @@
   <head>
     <meta charset="utf-8">
     <title>Krishan Mistry</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="My Personal Portfolio">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="restive.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/bower_components/normalize.css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/restive/restive.min.js"></script>
 
-    <script>
-    $( document ).ready(function() {
-        $('body').restive({
-            breakpoints: ['240', '320', '480', '640', '720', '960', '1280'],
-            classes: ['rp_240', 'rp_320', 'rp_480', 'rp_640', 'rp_720', 'rp_960', 'rp_1280'],
-            turbo_classes: 'is_mobile=mobi,is_phone=phone,is_tablet=tablet',
-            force_dip: true
-        });
-    });
+    <!-- Configure Restive.js -->
+   <script>
+      $( document ).ready(function() {
+          $('body').restive({
+              breakpoints: ['240', '320', '480', '640', '720', '960', '1280'],
+              classes: ['rp_240', 'rp_320', 'rp_480', 'rp_640', 'rp_720', 'rp_960', 'rp_1280'],
+              turbo_classes: 'is_mobile=mobi,is_phone=phone,is_tablet=tablet',
+              force_dip: true
+          });
+      });
     </script>
     
-    <script src="/assets/js/masonry.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
 
   </head>
 
-
 <body>
 	<div>
-		<h1> My Third Post </h1>
+		<h1> My Fourth Post </h1>
 		<p class="muted">14 January 2015</p>
 
-<p><img src="http://placehold.it/300x300" title="A Placeholder" alt="An Image" /></p>
+<p>Intro here yo ! &lt;-- THIS IS THE EXCERPT</p>
 
-<p>Sed id lacus eu urna ullamcorper mattis. Etiam ut nunc erat. Sed et velit ac nisi mattis mollis tempus id nulla. In varius fermentum posuere. Vivamus suscipit accumsan arcu ac ullamcorper. Aliquam adipiscing, ante non eleifend blandit, nunc diam vulputate augue, eu convallis lorem lacus in lacus. Curabitur ultricies ultrices diam, vel tincidunt dui rhoncus a. Vivamus at sapien in turpis consequat pharetra sit amet quis elit.</p>
-
-<h2>Nam vel justo ut nisl rutrum lobortis</h2>
-
-<p>Donec at arcu nisi, quis euismod enim. Donec viverra felis vitae elit ornare porta. Vivamus ullamcorper consectetur odio, vitae imperdiet mi laoreet vitae. Fusce ante ligula, cursus eget volutpat vel, pretium eget tellus.</p>
+<p>Post body begin, and first image not in excerpt
+ <-- first element of the array is zero
+<img src="http://placekitten.com/g/600/600" alt="Cypripedium Calceolum" title="Cypripedium Calceolum"></p>
 
 
 		</div>
