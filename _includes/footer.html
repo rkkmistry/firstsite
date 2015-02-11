@@ -1,4 +1,21 @@
 		</div>
+
+		<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/restive/restive.min.js"></script>
+    <script type="text/javascript" src="/bower_components/smoothstate/jquery.smoothstate.js"></script>
+    <script type="text/javascript" src="/assets/code.js"></script>
+
+    <!-- Configure Restive.js -->
+   <script>
+      $( document ).ready(function() {
+          $('body').restive({
+              breakpoints: ['240', '320', '480', '640', '720', '960', '1280'],
+              classes: ['rp_240', 'rp_320', 'rp_480', 'rp_640', 'rp_720', 'rp_960', 'rp_1280'],
+              turbo_classes: 'is_mobile=mobi,is_phone=phone,is_tablet=tablet',
+              force_dip: true
+          });
+      });
+    </script>
 	</body>
 
 </html>
