@@ -1,13 +1,21 @@
+.fade {
+  opacity: 0.75;
+  transition: opacity .1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -webkit-transition: opacity .1s ease-in-out; }
+
+.fade:hover {
+  opacity: 1; }
+
 body {
   font-family: 'Lato', sans-serif;
   color: white;
   background-color: black; }
 
 .home {
-  background: url(http://media1.giphy.com/media/OA4D9UR5LAaic/giphy.gif) no-repeat center center fixed;
-  background-size: cover;
   margin: 0 auto;
-  width: 80%; }
+  width: 80%;
+  position: relative; }
 
 .home-title a {
   color: white;
@@ -21,8 +29,9 @@ body {
 .homenav {
   color: white;
   font-size: 30px;
-  font-weight: 100;
-  margin-top: -25px; }
+  font-weight: 300;
+  margin-top: -10px;
+  padding-left: 4px; }
   .homenav a {
     color: white;
     font-size: 20px; }
@@ -37,7 +46,7 @@ body {
   .mobi .mobnav a {
     display: block;
     color: white;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 20px;
     margin-top: 10px; }
 
@@ -49,7 +58,7 @@ body {
   color: white;
   padding-left: 4px;
   font-size: 30px;
-  font-weight: 100;
+  font-weight: 300;
   margin-top: 20px;
   margin-bottom: 30px; }
   .othernav a {
@@ -57,7 +66,7 @@ body {
     font-size: 20px; }
   .othernav #active {
     font-size: 20px;
-    font-weight: 300; }
+    opacity: 1; }
 
 .post {
   width: 33%;
@@ -71,42 +80,3 @@ body {
 .mobi nav {
   width: 100%;
   display: none; }
-
-nav a {
-  position: relative;
-  display: inline-block;
-  outline: none;
-  text-decoration: none;
-  color: white;
-  font-weight: 100; }
-
-nav a:hover,
-nav a:focus {
-  outline: none; }
-
-/* Effect 5: same word slide in */
-.cl-effect-5 a {
-  overflow: hidden;
-  height: 1em; }
-
-.cl-effect-5 a span {
-  position: relative;
-  display: inline-block;
-  -webkit-transition: -webkit-transform 0.5s;
-  -moz-transition: -moz-transform 0.5s;
-  transition: transform 0.5s; }
-
-.cl-effect-5 a span::before {
-  position: absolute;
-  top: 100%;
-  content: attr(data-hover);
-  font-weight: 300;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
-
-.cl-effect-5 a:hover span,
-.cl-effect-5 a:focus span {
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  transform: translateY(-100%); }

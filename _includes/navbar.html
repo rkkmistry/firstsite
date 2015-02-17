@@ -1,23 +1,23 @@
-{% if page.layout == "default" %}
+<!-- {% if page.layout == "default" %}
   <a href = "/index.html"><span title = "HOME" data-hover = "HOME">HOME</span></a> |
-{% endif %}
+{% endif %} -->
 
 {% if page.title == "cv" %}
   <span id = "active" >CV</span> |
 {% else %}
-  <a href = "/CV/index.html"><span data-hover = "CV">CV</span></a> |
+  <a class = "fade" href = "/CV/index.html">CV</a> |
 {% endif %}
 
 {% if page.title == "design" %}
   <span id = "active">DESIGN</span> |
 {% else %}
-  <a href = "/DESIGN/index.html"><span data-hover = "DESIGN">DESIGN</span></a> |
+  <a class = "fade" href = "/DESIGN/index.html">DESIGN</a> |
 {% endif %}
   
 {% if page.title == "art" %}
   <span id = "active" >ART</span>
 {% else %}
-  <a href = "/ART/index.html"><span data-hover = "ART">ART</span></a>
+  <a class = "fade" href = "/ART/index.html">ART</a>
 {% endif %}
 
 
