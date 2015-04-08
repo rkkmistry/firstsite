@@ -99,7 +99,9 @@ textarea {
 
 html {
     
-    background: url("../img/use.jpg") no-repeat center center fixed; 
+/*    background-color: black;*/
+        
+          background: url(http://giant.gfycat.com/SleepyCreamyGenet.gif) no-repeat bottom center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -107,9 +109,9 @@ html {
 }
 
 a {
-    color: black;
+    color: white;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 
@@ -299,20 +301,21 @@ a {
 .main {
     max-width: 500px;
     margin: 0 auto;
-    margin-top: 50px;
-    padding: 20px;
+    padding: 30px;
     text-align: justify;
     text-justify: inter-letter;
-    background-color: rgba(192,192,192,0.5);
-    font-size: 1.2em;
+    font-size: 1.7em;
     font-weight: 100;
+    color: white;
+    line-height: 2em;
+    letter-spacing: -0.03em;
 }
 
 #name {
     font-size: 1.5em;
-    font-weight: 400;
+    font-weight: 700;
+    position: relative;
 }
 
 .divide {
-    font-size: 1.2em;
 }
